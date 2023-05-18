@@ -1,0 +1,39 @@
+<style>
+    body {
+        background-color: brown;
+        margin: 0px;
+        padding: 0px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        width: 50%;
+        padding: 20px;
+        margin: auto;
+        background-color: gray;
+    }
+    .items {
+        background-color: black;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    .inp {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .items in grid[type="text"]{
+        padding: 20px;
+        width: 90%;
+        background-color: transparent;
+        border: none;
+        color: white;
+        justify-content: end;
+    }
+    :focus{
+        background-color: white;
+        color: black;
+    }
+</style>

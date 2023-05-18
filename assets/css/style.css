@@ -1,0 +1,142 @@
+
+    body {
+        margin: 0px;
+        padding:0px;
+        background-image: url(../images/pink-hibiscus-g723ecb536_1920.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    header {
+        background-color:cadetblue;
+    }
+    .flex-container {
+        display: flex;
+    }
+    .left-header {
+        flex: 50%;
+        background-color:black;
+    }
+    .right-header {
+        flex: 50%;
+        background-color: black;
+        text-align: right;
+    }
+    header ul, nav ul{
+        list-style-type: none;
+    }
+    header li ,nav li{
+        display: inline;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        transition: 0.5s all;
+    }
+    header li:hover {
+        background-color: aqua;
+    }
+    header a {
+        text-decoration: none;
+        color:antiquewhite;
+        font-size: 20px;
+    }
+    header li:hover a {
+        color:black;
+    }
+    nav {
+        background-color: aqua;
+    }
+    .left-nav {
+        flex: 30%;
+    }
+    .left-nav img {
+        float: left;
+        height: auto;
+        width: 150px;
+    }
+    .right-nav {
+        flex:70%;
+        text-align: center;
+    }
+    nav a {
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%,-50%);
+    }
+    .title h1 {
+        color: white;
+        font-size: 70px;
+    }
+    .buttons {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        transform: translate3d(-50%,-50%);
+    }
+    .btn {
+        border: 1px solid white;
+        padding: 10px 30px;
+        color: white;
+        text-decoration: none;
+
+    }
+    div.crunchify-panel {
+    float: left;
+    width: 25%;
+    margin: 25px;
+    padding: 35px 30px 30px 30px;
+    border: 1px solid #ececec;
+    font-size: 15px;
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(0, 0, 0, .1) inset;
+    height: 420px
+}
+div.crunchify-panel img {
+    border: 1px solid #e8e8e8
+}
+/* For Rectangle Dotted box */
+.crunchify-deals-coupon {
+    border: 2px dashed #dd7127;
+    padding: 3px 3px 5px 8px;
+    border-radius: 5px;
+    color: #464646;
+    font-size: 13px;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.crunchify-deals-coupon::before {
+    font-size: 18px;
+    vertical-align: top;
+    content: "\f0a4";
+    font-family: "Font Awesome 5 Free";
+    color: #b11f24;
+    margin: 5px 10px;
+}
+.crunchify-deals-coupon:hover {
+    border: 2px solid #dd7127;
+    text-decoration: none
+}
+    @media only screen and (min-width:320px) and (max-width:480px) {
+        .flex-container {
+            flex-direction: column;
+        }
+        header {
+            display:none
+        }
+        header li ,nav li{
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+    }
+
+
+
